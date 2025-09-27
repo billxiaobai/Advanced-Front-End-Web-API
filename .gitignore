@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Test coverage
+coverage/
+
+# Build / output folders
+dist/
+build/
+out/
+lib/
+
+# Bundler caches
+.cache/
+.parcel-cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Misc
+reports/
+.temp/
+
+# Keep lockfiles by default for reproducible installs
+# Uncomment if you prefer ignoring them:
+# package-lock.json
+# yarn.lock

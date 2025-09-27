@@ -1,0 +1,14 @@
+{
+  "name": "advanced-front-end-web-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "scaffold": "node Tool/Scaffolder/index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0",
+    "axios-mock-adapter": "^1.21.2"
+  }
+}
