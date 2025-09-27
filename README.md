@@ -27,7 +27,11 @@
 
 ## 授權 (License)
 
-您的專案是根據 **[MIT 授權](LICENSE)** 發佈的。
+您的專案是根據 **[MIT 授權](LICENSE)** 發佈的。  
+
+### 聯絡作者
+
+DCID:billxiaobai
 
 
 
