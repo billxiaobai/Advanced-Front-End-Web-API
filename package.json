@@ -1,7 +1,9 @@
 {
   "name": "advanced-front-end-web-api",
   "version": "1.0.0",
-  "private": true,
+  "main": "Tool/Toolbox.js",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "test": "jest",
     "scaffold": "node Tool/Scaffolder/index.js"

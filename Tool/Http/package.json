@@ -1,0 +1,7 @@
+{
+  "name": "advanced-front-end-web-api-http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "HTTP utilities for Advanced Front-End Web API"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "advanced-front-end-web-api-statestore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Reactive state store for Advanced Front-End Web API"
+}

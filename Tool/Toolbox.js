@@ -1,25 +1,25 @@
-const Toast = require('./Toast/ToastAPI');
-const Form = require('./FormState/FormAPI');
-const HttpUtils = require('./Http/HttpUtils');
-const HttpConfig = (() => {
-	try { return require('./Http/HttpConfig'); } catch (e) { return null; }
-})();
+// 使用各套件的 index.js 入口，避免直接引用內部實作檔案
+let Toast;
+try { Toast = require('./Toast'); } catch (e) { Toast = null; }
+let Form;
+try { Form = require('./FormState'); } catch (e) { Form = null; }
+let HttpModule;
+try { HttpModule = require('./Http'); } catch (e) { HttpModule = null; }
+const HttpUtils = HttpModule && HttpModule.HttpUtils ? HttpModule.HttpUtils : null;
+const HttpConfig = HttpModule && HttpModule.HttpConfig ? HttpModule.HttpConfig : null;
 
-// 新增：引入 ViewObserver（若不存在則為 null）
+// 改為直接使用各套件 index.js 入口
 let ViewObserver;
-try { ViewObserver = require('./ViewObserver/ViewObserverAPI'); } catch (e) { ViewObserver = null; }
+try { ViewObserver = require('./ViewObserver'); } catch (e) { ViewObserver = null; }
 
-// 新增：引入 MicroRenderer（容錯處理）
 let MicroRenderer;
-try { MicroRenderer = require('./MicroRenderer/RendererAPI'); } catch (e) { MicroRenderer = null; }
+try { MicroRenderer = require('./MicroRenderer'); } catch (e) { MicroRenderer = null; }
 
-// 新增：引入 SimpleRouter（容錯處理）
 let SimpleRouter;
-try { SimpleRouter = require('./SimpleRouter/RouterAPI'); } catch (e) { SimpleRouter = null; }
+try { SimpleRouter = require('./SimpleRouter'); } catch (e) { SimpleRouter = null; }
 
-// 新增：引入 StateStore（容錯處理）
 let StateStore;
-try { StateStore = require('./StateStore/StateStoreAPI'); } catch (e) { StateStore = null; }
+try { StateStore = require('./StateStore'); } catch (e) { StateStore = null; }
 
 function init(config = {}) {
 	// toast defaults
@@ -46,6 +46,5 @@ module.exports = {
 	ViewObserver,
 	MicroRenderer,
 	SimpleRouter,
-	// 匯出 StateStore API
 	StateStore
 };

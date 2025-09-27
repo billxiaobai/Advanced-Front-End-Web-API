@@ -1,0 +1,7 @@
+{
+  "name": "advanced-front-end-web-api-formstate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Form state management for Advanced Front-End Web API"
+}

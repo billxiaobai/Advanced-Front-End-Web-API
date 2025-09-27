@@ -1,0 +1,7 @@
+{
+  "name": "advanced-front-end-web-api-viewobserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Intersection Observer utilities for Advanced Front-End Web API"
+}

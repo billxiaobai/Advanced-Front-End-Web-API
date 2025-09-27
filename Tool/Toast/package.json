@@ -1,0 +1,7 @@
+{
+  "name": "advanced-front-end-web-api-toast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Toast notification API for Advanced Front-End Web API"
+}
