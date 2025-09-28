@@ -1,16 +1,34 @@
 {
-  "name": "advanced-front-end-web-api",
+  "name": "@billxiaobai/advanced-toolkit",
   "version": "1.0.2",
+  "description": "一套模組化、高性能的前端高階函式庫集合 (HTTP, Router, StateStore, Toast等)。",
+  "author": "Bill Xiaobai",
+  "license": "MIT",
+  
   "main": "dist/toolbox.cjs",
   "module": "dist/toolbox.mjs",
   "types": "types/index.d.ts",
-  "license": "MIT",
-  "private": false,
+  
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "README.md",
+    "Tool/Scaffolder/index.js",
+    "Tool/Scaffolder/templates"
+  ],
+
+  "bin": {
+    "toolkit-cli": "Tool/Scaffolder/index.js"
+  },
+  
   "scripts": {
     "test": "jest",
     "scaffold": "node Tool/Scaffolder/index.js",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
+
   "devDependencies": {
     "jest": "^29.0.0",
     "jest-environment-jsdom": "^29.0.0",
