@@ -1,6 +1,6 @@
 {
   "name": "advanced-front-end-web-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/toolbox.cjs",
   "module": "dist/toolbox.mjs",
   "types": "types/index.d.ts",
