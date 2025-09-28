@@ -1,16 +1,23 @@
 {
   "name": "advanced-front-end-web-api",
   "version": "1.0.0",
-  "main": "Tool/Toolbox.js",
+  "main": "dist/toolbox.cjs",
+  "module": "dist/toolbox.mjs",
+  "types": "types/index.d.ts",
   "license": "MIT",
   "private": false,
   "scripts": {
     "test": "jest",
-    "scaffold": "node Tool/Scaffolder/index.js"
+    "scaffold": "node Tool/Scaffolder/index.js",
+    "build": "rollup -c"
   },
   "devDependencies": {
     "jest": "^29.0.0",
     "jest-environment-jsdom": "^29.0.0",
-    "axios-mock-adapter": "^1.21.2"
+    "axios-mock-adapter": "^1.21.2",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "rollup": "^4.0.0"
   }
 }
