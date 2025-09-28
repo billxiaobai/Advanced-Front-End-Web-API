@@ -1,8 +1,8 @@
 {
-  "name": "@billxiaobai/advanced-toolkit",
+  "name": "advanced-toolkit",
   "version": "1.0.3",
   "description": "一套模組化、高性能的前端高階函式庫集合 (HTTP, Router, StateStore, Toast等)。",
-  "author": "Bill Xiaobai",
+  "author": "Bill-Zheng",
   "license": "MIT",
   "main": "dist/toolbox.cjs",
   "module": "dist/toolbox.mjs",
