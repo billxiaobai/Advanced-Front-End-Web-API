@@ -14,14 +14,6 @@
 | **優化工具** | `ViewObserver` | 滾動性能與懶加載 | 基於 **Intersection Observer** 的優化 |
 | **用戶反饋** | `Toast` | 訊息通知與排隊管理 | 自動化佇列、與 HTTP 錯誤自動整合 |  
 
-## 開發與貢獻
-
-我們歡迎所有貢獻！如果您想在本機運行或修改程式碼，請遵循以下步驟：
-
-1. 克隆專案：`git clone https://github.com/yourusername/micro-toolkit.git`
-2. 安裝依賴：`npm install`
-3. **打包所有模組：** `npm run build`
-4. **運行測試：** `npm test`
 
 ---
 
